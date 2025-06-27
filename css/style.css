@@ -1,32 +1,32 @@
 /*------------------------------------------------------------------
-[Table of contents]
-01. Fonts settings
-02. Default style
-03. Banner & Section style
-04. Line style
-05. Navigation style
-06. Homepage slider style
-07. About style
-08. Testimonials style
-09. Travel Dates style
-10. Gallery style
-11. Recent Weddings style
-12. Prices style
-13. FAQs Style
-14. Contact styles
-18. toTop button
-15. Footer styles
-16. Button style
-17. Overlay Effect Bg image  
-18. Media Query
+[Оглавление]
+01. Настройки шрифтов
+02. Стиль по умолчанию
+03. Стиль баннеров и разделов
+04. Стиль строк
+05. Стиль навигации
+06. Стиль слайдера главной страницы
+07. Стиль информации
+08. Стиль отзывов
+09. Стиль дат поездок
+10. Стиль галереи
+11. Стиль последних свадеб
+12. Стиль цен
+13. Стиль часто задаваемых вопросов
+14. Стиль контактов
+18. Кнопка вверху
+15. Стиль нижнего колонтитула
+16. Стиль кнопок
+17. Наложение эффекта на изображение в формате Bg  
+18. Медиа-запрос
 
 -------------------------------------------------------------------*/
 
-/* ======= 1. Fonts settings ======= */
+/* ======= 1. Настройки шрифтов ======= */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @font-face{font-family:Paris Script;src:url('../fonts/parisscript-regular.woff');}
 
-/* ======= 2. Default style ======= */
+/* ======= 2. Стиль по умолчанию ======= */
 body {
     color: #505050;
     line-height: 1.75;
