@@ -1,41 +1,41 @@
 (function () {
     "use strict";
 
-    var marta = {
+    const marta = {
         init: function () {
             this.initmartaSlider();
             this.initTestimonialsSlider();
         },
-       
+    
         // Слайдер на главной
         initmartaSlider: function (selector) {
             this.swiper = new Swiper('.marta-slider', {
                 loop: true,
                 autoplay: {
-                  delay: 4000,
-                  disableOnInteraction: false,
+                    delay: 4000,
+                    disableOnInteraction: false,
                 },
                 pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
+                    el: '.swiper-pagination',
+                    clickable: true,
                 },
                 navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
                 },
                 speed: 600,
                 slidesPerView: 1,
                 spaceBetween: 10,
 
                 breakpoints: {
-                  768: {
+                    768: {
                     slidesPerView: 2,
                     spaceBetween: 15,
-                  },
-                  992: {
+                    },
+                    992: {
                     slidesPerView: 3,
                     spaceBetween: 20,
-                  }
+                    }
                 }
             });
         },
@@ -61,7 +61,7 @@
 
 
     document.querySelectorAll('.bg-img, section').forEach(function(section) {
-        var bg = section.getAttribute('data-background');
+        const bg = section.getAttribute('data-background');
         if (bg) {
             section.style.backgroundImage = 'url(' + bg + ')';
         }
@@ -85,7 +85,7 @@
 
         titles.forEach(title => {
             title.addEventListener('click', () => {
-            const item = title.parentElement; // .item
+            const item = title.parentElement; 
             const info = item.querySelector('.accordion-info');
 
             // Проверяем, открыт ли уже этот блок
@@ -113,7 +113,6 @@
 
         filterItems.forEach(filter => {
             filter.addEventListener('click', e => {
-            e.preventDefault();
 
             // Убираем active со всех фильтров
             filterItems.forEach(i => i.classList.remove('active'));
