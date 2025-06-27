@@ -74,9 +74,6 @@
 
         toggler.addEventListener('click', function() {
         menu.classList.toggle('show');
-
-        const expanded = toggler.getAttribute('aria-expanded') === 'true';
-        toggler.setAttribute('aria-expanded', String(!expanded));
         });
     
 
